@@ -1,4 +1,5 @@
 ﻿using ClimaApp.Domain.Entities;
+using ClimaApp.Domain.Interfaces.Services;
 using ClimaApp.Domain.Services;
 using ClimaApp.Domain.Validations;
 using FluentValidation;
@@ -11,7 +12,7 @@ public static class DomainServicesExtension
     public static IServiceCollection AddDomainServices(this IServiceCollection services)
     {
         services.AddScoped<IRelatorioDomainService, RelatorioDomainService>();
-        services.AddScoped<SolicitanteDomainService, SolicitanteDomainService>();
+        services.AddScoped<ISolicitanteDomainService, SolicitanteDomainService>();
         services.AddScoped<IValidator<Relatorio>, RelatorioValidation>();
         services.AddScoped<IValidator<Solicitante>, SolicitanteValidation>();
 
