@@ -19,8 +19,16 @@ public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : 
 
     public virtual async Task AddAsync(TEntity entity)
     {
-        await _context.Set<TEntity>().AddAsync(entity);
-        await _context.SaveChangesAsync();
+        try
+        {
+            await _context.Set<TEntity>().AddAsync(entity);
+            await _context.SaveChangesAsync();
+        }
+        catch (Exception ex)
+        {
+            var inner = ex.InnerException?.Message ?? ex.Message;
+            throw new Exception($"Erro ao salvar entidade do tipo {typeof(TEntity).Name}: {inner}", ex);
+        }
     }
 
     public virtual async Task<List<TEntity>> GetAllAsync()
