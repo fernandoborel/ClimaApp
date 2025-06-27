@@ -1,3 +1,4 @@
+using ClimaApp.Domain.Extensions;
 using ClimaApp.Infra.Data.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
+builder.Services.AddDomainServices();
 builder.Services.AddEntityFramework(builder.Configuration);
 
 var app = builder.Build();

@@ -1,4 +1,6 @@
-﻿using ClimaApp.Infra.Data.Contexts;
+﻿using ClimaApp.Domain.Interfaces.Repositories;
+using ClimaApp.Infra.Data.Contexts;
+using InfoDengueApp.Infra.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,6 +15,8 @@ public static class EntityFrameworkExtensions
         {
             options.UseSqlServer(configuration.GetConnectionString("DBO_CLIMAAPP"));
         });
+
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         return services;
     }
