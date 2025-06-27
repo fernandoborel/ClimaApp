@@ -1,9 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36221.1 d17.14
+VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimaApp.API", "ClimaApp.API\ClimaApp.API.csproj", "{DEBB6361-4553-45C2-BF89-860D5695687D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimaApp.Application", "ClimaApp.Application\ClimaApp.Application.csproj", "{6CA645EB-64CF-4AE2-9106-F819E74EF344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimaApp.Domain", "ClimaApp.Domain\ClimaApp.Domain.csproj", "{B05AE90F-8712-4FA8-B2B9-34AE2005443F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimaApp.Infra.Data", "ClimaApp.Infra.Data\ClimaApp.Infra.Data.csproj", "{6F1A93A2-3B5F-4DA9-8531-8B9523534D16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{CAB3CBDF-E02A-4BB1-9B92-D3CE37544219}"
+	ProjectSection(SolutionItems) = preProject
+		SqlQuery_1.sql = SqlQuery_1.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +31,18 @@ Global
 		{DEBB6361-4553-45C2-BF89-860D5695687D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEBB6361-4553-45C2-BF89-860D5695687D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEBB6361-4553-45C2-BF89-860D5695687D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA645EB-64CF-4AE2-9106-F819E74EF344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA645EB-64CF-4AE2-9106-F819E74EF344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA645EB-64CF-4AE2-9106-F819E74EF344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA645EB-64CF-4AE2-9106-F819E74EF344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B05AE90F-8712-4FA8-B2B9-34AE2005443F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05AE90F-8712-4FA8-B2B9-34AE2005443F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05AE90F-8712-4FA8-B2B9-34AE2005443F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05AE90F-8712-4FA8-B2B9-34AE2005443F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F1A93A2-3B5F-4DA9-8531-8B9523534D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1A93A2-3B5F-4DA9-8531-8B9523534D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1A93A2-3B5F-4DA9-8531-8B9523534D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1A93A2-3B5F-4DA9-8531-8B9523534D16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
