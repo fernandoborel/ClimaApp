@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimaApp.API", "ClimaApp.API\ClimaApp.API.csproj", "{DEBB6361-4553-45C2-BF89-860D5695687D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEBB6361-4553-45C2-BF89-860D5695687D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEBB6361-4553-45C2-BF89-860D5695687D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEBB6361-4553-45C2-BF89-860D5695687D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEBB6361-4553-45C2-BF89-860D5695687D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {554C4216-09AA-42F8-8FE5-25B18CD65597}
+	EndGlobalSection
+EndGlobal
